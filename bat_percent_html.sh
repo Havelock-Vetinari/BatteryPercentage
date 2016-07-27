@@ -4,7 +4,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 . "${SCRIPT_DIR}/bat_functions.sh"
 
-ioreg -c IOAppleBluetoothHIDDriver -ra -k "BatteryPercent" -d 1 > "${TMP_FILE_PATH}"
+ioreg -ra -k "BatteryPercent" -d 1 > "${TMP_FILE_PATH}"
 
 echo "<html><head>"
 echo "<meta charset=\"UTF-8\">"

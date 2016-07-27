@@ -5,7 +5,7 @@ export TERM=xterm-256color
 
 . "${SCRIPT_DIR}/bat_functions.sh"
 
-ioreg -c IOAppleBluetoothHIDDriver -ra -k "BatteryPercent" -d 1 > /tmp/ioreg_out.xml
+ioreg -ra -k "BatteryPercent" -d 1 > /tmp/ioreg_out.xml
 
 index=0
 while true; do
